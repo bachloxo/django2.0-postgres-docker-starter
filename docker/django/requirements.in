@@ -1,0 +1,4 @@
+django>=2.0
+ptvsd==3.0.0
+pycodestyle
+psycopg2

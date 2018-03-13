@@ -1,0 +1,10 @@
+# IDEs and editors
+.idea
+.vscode
+
+# Django
+django/
+
+# other
+*.pyc
+*.log
