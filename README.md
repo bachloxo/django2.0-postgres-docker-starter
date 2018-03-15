@@ -12,6 +12,7 @@ docker-compose up -d pgsql
 docker-compose exec pgsql psql -Upostgres
 create database django;
 \q
+mkdir django
 docker-compose run --rm -u $(id -u) django django-admin startproject project .
 ```
 
