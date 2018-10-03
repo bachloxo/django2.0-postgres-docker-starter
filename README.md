@@ -9,7 +9,7 @@ Build Docker image, create an empty PostgreSQL database, create a Django project
 ```
 docker-compose build
 docker-compose up -d pgsql
-docker-compose exec pgsql psql -Upostgres
+docker-compose exec pgsql psql -U postgres
 create database django;
 \q
 mkdir django

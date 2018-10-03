@@ -18,7 +18,7 @@ RUN mkdir -p /usr/share/man/man1 \
 # PostgreSQL client
 ADD pgpass /root/.pgpass
 RUN DEBIAN_FRONTEND=noninteractive apt-get update -q \
-    && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends postgresql-client-common postgresql-client-9.4 \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends postgresql-client-common postgresql-client-9.6 \
     && chmod 600 /root/.pgpass \
     && DEBIAN_FRONTEND=noninteractive apt-get clean \
     && rm -rf /var/lib/apt/lists/*
